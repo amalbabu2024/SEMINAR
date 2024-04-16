@@ -61,5 +61,20 @@ upload_button.pack()
 output_label = tk.Label(root, width=640, height=480)
 output_label.pack()
 
+# from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+#
+# predicted_labels = [0, 1, 0, 1, 0, 1]
+# ground_truth_labels = [0, 0, 1, 1, 0, 1]
+#
+# # Assuming ground_truth_labels and predicted_labels are lists of labels
+# accuracy = accuracy_score(ground_truth_labels, predicted_labels)
+# precision = precision_score(ground_truth_labels, predicted_labels)
+# recall = recall_score(ground_truth_labels, predicted_labels)
+# f1 = f1_score(ground_truth_labels, predicted_labels)
+#
+# result = f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1 Score: {f1}"
+# print(result)
+
+
 # Start the tkinter main loop
 root.mainloop()

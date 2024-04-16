@@ -222,8 +222,8 @@ def upload_file():
                     # Return image result
                     return render_template('result.html', file=output_file, image=encoded_image)
                 elif output_file.endswith(".mp4"):
-                    # Return video result
-                    return render_template('result.html', file=output_file, video=output_file_path)
+                    video_url = url_for('static', filename=f'yolov5/runs/detect/{latest_exp_folder}/{output_file}')
+                    return render_template('result.html', file=output_file, video=video_url)
 
     return "Error processing file"
 
